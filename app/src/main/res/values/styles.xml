@@ -1,0 +1,170 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="FindBar">
+        <attr name="percent" format="float" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+
+
+    <!--  QMUI application theme-->
+    <style name="QMUIAppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="QMUITopBarStyle">@style/TopBarStyle</item>
+    </style>
+
+
+    <!-- 添加 TopBarStyle -->
+    <style name="TopBarStyle" parent="QMUI.TopBar">
+        <item name="qmui_topbar_subtitle_color">@color/colorStyle</item>
+        <item name="qmui_topbar_title_color">@color/colorTableLine</item>
+        <item name="qmui_topbar_title_text_size">28sp</item>
+    </style>
+
+    <style name="DialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="QMUITest" parent="QMUI.BaseDialog">
+        <item name="android:backgroundDimAmount">?attr/qmui_dialog_background_dim_amount</item>
+        <item name="android:windowBackground">@color/qmui_config_color_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="qmui_topbar_title_text_size">28sp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:windowIsFloating">true</item><!-- 在中间弹框、背后有遮罩的效果 -->
+    </style>
+
+    <style name="TextViewStyle" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.15</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    //home button
+    <style name="homeButton">
+        <item name="android:layout_width">@dimen/qb_px_115</item>
+        <item name="android:layout_height">@dimen/qb_px_115</item>
+        <item name="android:background">@drawable/round_style</item>
+        <item name="android:padding">17dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="BtnSytle" parent="AppTheme">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="textbj">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name= "android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="item_showtasklisttext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">#FFEC6E32</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/colorTableLine</item>
+    </style>
+
+    <style name="item_showTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/colorTableLine</item>
+    </style>
+    <style name="item_showTas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">#FFEC6E32</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/colorTableLine</item>
+    </style>
+    <style name="item_show_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="item_show_adage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="item_showtasklisttitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <!--橘色按钮-->
+    <style name="dialog_button_no">
+        <item name="android:layout_height">@dimen/qb_px_50</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/buttonselectorange</item>
+    </style>
+    <!--蓝色按钮-->
+    <style name="dialog_button_yes">
+        <item name="android:layout_height">@dimen/qb_px_50</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_select_blue</item>
+    </style>
+
+
+    <style name="dialog_button_delete">
+        <item name="android:layout_height">@dimen/qb_px_50</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_select_red</item>
+    </style>
+
+    <!--绿色按钮-->
+
+    <style name="dialog_button_finish">
+        <item name="android:layout_height">@dimen/qb_px_50</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_select_gree</item>
+    </style>
+</resources>

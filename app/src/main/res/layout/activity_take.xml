@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/lineState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/totalHit"
+            style="@style/item_showTas"
+            android:layout_width="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/total" />
+        <TextView
+            android:id="@+id/total"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/zero"/>
+        <TextView
+            android:id="@+id/finishinventoryHit"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/qb_px_10"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/finishInventory"/>
+        <TextView
+            android:id="@+id/finishinventory"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/zero"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/areaState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineState">
+
+        <TextView
+            android:id="@+id/areaTotalHit"
+            style="@style/item_showTas"
+            android:layout_width="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/area_total" />
+        <TextView
+            android:id="@+id/areaTotal"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/zero"/>
+        <TextView
+            android:id="@+id/areaInventoryHit"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/qb_px_10"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/finishInventory"/>
+        <TextView
+            android:id="@+id/areaInventory"
+            style="@style/item_showTas"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/zero"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/areaState">
+
+        <TextView
+            android:id="@+id/departmentHit"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_width="@dimen/qb_px_140"
+            android:padding="@dimen/qb_px_5"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/qb_px_8"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:text="@string/departmentHit"
+            android:background="@drawable/round_style" />
+
+        <TextView
+            android:id="@+id/AreaHit"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_width="@dimen/qb_px_140"
+            android:padding="@dimen/qb_px_8"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/qb_px_8"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/Area"
+            android:background="@drawable/round_style" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/findInventoryListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/LinearInventory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/li" />
+    <LinearLayout
+        android:id="@+id/LinearInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findInventoryListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonInventorySet"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            style="@style/dialog_button_no"
+            android:text="@string/back" />
+<!--        <Button-->
+<!--            android:id="@+id/buttonInventoryClean"-->
+<!--            style="@style/dialog_button_finish"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:enabled="false"-->
+<!--            android:text="清空"-->
+<!--            android:textColor="@color/colorBlack" />-->
+
+        <Button
+            android:id="@+id/buttonInventoryExport"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            style="@style/dialog_button_yes"
+            android:textColor="@color/colorBlack"
+            android:text="@string/export" />
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/logoText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="right"-->
+<!--        android:layout_margin="@dimen/qb_px_8"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/LinearInventory"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/tex1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@mipmap/logo"-->
+<!--            android:textColor="#FF003768" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/text"-->
+<!--            style="@style/item_showTitle"-->
+<!--            android:textSize="12sp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:text="www.aidcsys.com"-->
+<!--            android:layout_margin="@dimen/qb_px_8"/>-->
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

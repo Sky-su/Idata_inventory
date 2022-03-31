@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Inventory system</string>
+    <string name="RepeatClick" >RepeatClick</string>
+    <string name="success" >success</string>
+    <string name="fails" >fails</string>
+    <string name="permission">permission</string>
+    <string name="permissionMessage">Click "Allow" to use our app</string>
+    <string name="Allow">Allow</string>
+    <!-- 主页面参数-->
+    <string name="load">load…</string>
+    <string name="remind">remind</string>
+    <string name="submit">submit</string>
+    <string name="settingInfoHit">请填写正确信息</string>
+    <string name="help" id="1">Help</string>
+
+    <string name="noNetwork">noNetwork</string>
+    <string name="complete">complete</string>
+    <string name="choose_file">Failed to read file, please check</string>
+    <string name="named_file">assign</string>
+    <string name="name_export">Whether to export inventory data</string>
+    <string name="exit_inventory">Whether to withdraw from inventory</string>
+    <!-- RF参数-->
+    <!-- RF参数-->
+
+    <string name="lock_operate">锁定操作</string>
+    <string name="lock_area">锁定区域：</string>
+    <string name="lock">锁定</string>
+    <string name="unlock">解锁</string>
+    <string name="kill_Tag">销毁标签</string>
+    <string name="sn_code">SN</string>
+    <string name="epc_code">EPC</string>
+    <string name="read_numbers">读取次数</string>
+    <string name="get_power">获取功率</string>
+    <string name="set_power">设置功率</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_qrcode">当前二维码</string>
+    <string name="start_search">开始查找</string>
+    <string name="stop_search">停止查找</string>
+    <string name="current_Tag">当前识别的标签:</string>
+    <string name="sound_switch">是否启动盘点声音</string>
+    <string name="start_scanner_code">开始扫码</string>
+    <string name="stop_scanner_code">停止扫码</string>
+    <string name="findtag_operate">寻标签操作</string>
+    <string name="set_inventory_time">设置占空比</string>
+    <string name="get_inventory_time">获取占空比</string>
+    <string name="inventory_time">盘点时间(ms)</string>
+    <string name="sleep_time">休眠时间(ms)</string>
+
+    <string name="set_frq_range">设置频点范围</string>
+    <string name="get_frq_range">获取频点范围</string>
+
+    <string name="exit_app">是否退出应用</string>
+    <string name="notice_close_inventroy">请先关闭RFID盘点操作</string>
+    <string name="poweron_success">上电成功</string>
+    <string name="charing">正在充电</string>
+    <string name="charing_full">把枪电池已充满</string>
+    <string name="notice_clean_data">请先停止RFID模块，再清空数据</string>
+    <string name="clean_success">清除成功</string>
+    <string name="failed">失败</string>
+    <string name="notice_power_failed">
+         1.请确认设置-〉用户自定义-〉EMSH设置-〉开启EMSH服务已勾选\n
+                            2.请确认PDA右上角有两个电池图标，且都显示有电；\n
+                            如果只有一个电池图标，请确认把枪和PDA连接是否可靠；\n如果左侧电池图标没电，请使用专用三合一座充充电\n
+                            3.如还有问题，请截取EMSH设置-〉EMSH状态的截图，发送给相关技术支持
+    </string>
+    <string name="set">设置</string>
+    <string name="pwd">密码</string>
+    <string name="deviceid">设备号</string>
+    <string name="deviceurl">服务器地址</string>
+    <string name="update_time">刷新时间</string>
+    <string name="IpVersion">服务器版本</string>
+    <string name="deviceIdHit">请输入设备号</string>
+    <string name="deviceurlHit_two">设备号只能是3位的数字</string>
+    <string name="deviceUrlHit">请输入服务器地址</string>
+    <string name="settingErrorHit">设备号和服务器地址不能为空</string>
+    <!--提示-->
+    <string name="hint_warn">警告</string>
+    <string name="hit_out_error">错误</string>
+    <string name="netWork_connectionTimeout">与服务器链接超时</string>
+    <string name="netWork_connectionError">与服务器链接失败</string>
+    <string name="poweon_failed">电源无法开启</string>
+    <string name="select_bin_file">选择bin文件</string>
+    <string name="connecting">Try to connect to the scanner</string>
+    <string name="battery">Device Battery</string>
+    <string name="cancel">Cancel</string>
+    <string name="err_title">error</string>
+    <string name="label_read_total">finishedReading</string>
+    <string name="no_reader">No connection to the scanner gun</string>
+    <string name="no_start">Startup failed, may be recharging</string>
+    <string name="ok">OK</string>
+    <string name="retry">retry？</string>
+    <string name="clean">Clean</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="exit_supply">是否退出补登</string>
+    <string name="inventory_success">Export files to</string>
+    <string name="unInventory">Undone:</string>
+    <string name="finishInventory">seek:</string>
+    <string name="endInventory">endInventory</string>
+    <string name="summary">summary</string>
+    <string name="total">total:</string>
+    <string name="activation_code">Please enter the activation code</string>
+
+
+    <string-array name="serialNumber">
+        <item>21215523022235</item>
+        <item>21215523022236</item>
+        <item>21215523022237</item>
+        <item>21215523022238</item>
+    </string-array>
+    //设置
+    <string name="language">language</string>
+    <string name="chinese" >chinese</string>
+    <string name="english" >english</string>
+    <string name="version">version</string>
+    <string name="power">power</string>
+    <string name="Area">Area:</string>
+    <string name="setting">setting</string>
+    <string name="all">all</string>
+    <string name="find_tag">find_tag</string>
+    <string name="inventory">inventory</string>
+    <string name="exit">exit</string>
+    <string name="export">export</string>
+    <string name="back">back</string>
+    <string name="epc">Asset tag</string>
+    <string name="area_total">Regional total:</string>
+    <string name="departmentHit">部门</string>
+    <string-array name="antennas">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string-array name="goods">
+        <item>正常</item>
+        <item>修改</item>
+        <item>销毁</item>
+    </string-array>
+    <string-array name="select">
+        <item>详情</item>
+        <item>寻物</item>
+    </string-array>
+</resources>

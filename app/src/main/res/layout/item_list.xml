@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_style"
+        android:elevation="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="12dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="5dp"
+        android:layout_marginEnd="8dp">
+        <TextView
+            style="@style/item_show_adage"
+            android:id="@+id/stockNameHit"
+            android:paddingTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            style="@style/item_showtasklisttext"
+            android:id="@+id/stockName"
+            app:layout_constraintStart_toEndOf="@+id/stockNameHit"
+            app:layout_constraintBottom_toBottomOf="@+id/stockNameHit"
+            app:layout_constraintTop_toTopOf="@+id/stockNameHit"/>
+
+        <View
+            style="@style/item_showtasklisttitle"
+            android:id="@+id/view_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stockNameHit"
+            app:layout_constraintStart_toStartOf="@+id/stockNameHit"/>
+
+        <TextView
+            android:id="@+id/stockIdHit"
+            style="@style/item_showtasklisttitle"
+            app:layout_constraintStart_toStartOf="@+id/stockNameHit"
+            app:layout_constraintTop_toBottomOf="@+id/view_task_list" />
+
+        <TextView
+            android:id="@+id/stockId"
+            style="@style/item_showtasklisttext"
+            app:layout_constraintBottom_toBottomOf="@+id/stockIdHit"
+            app:layout_constraintStart_toEndOf="@+id/stockIdHit"
+            app:layout_constraintTop_toTopOf="@+id/stockIdHit" />
+        <TextView
+            style="@style/item_showtasklisttitle"
+            android:id="@+id/ERPHit"
+            app:layout_constraintTop_toBottomOf="@+id/view_task_list"
+            app:layout_constraintStart_toEndOf="@+id/stockId" />
+        <TextView
+            style="@style/item_showtasklisttext"
+            android:id="@+id/ERP"
+            app:layout_constraintStart_toEndOf="@+id/ERPHit"
+            app:layout_constraintBottom_toBottomOf="@+id/ERPHit"
+            app:layout_constraintTop_toTopOf="@+id/ERPHit"/>
+        
+        <TextView
+            style="@style/item_showtasklisttitle"
+            android:id="@+id/preserverHit"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/stockIdHit"
+            app:layout_constraintStart_toStartOf="@+id/stockIdHit" />
+        <TextView
+            style="@style/item_showtasklisttext"
+            android:id="@+id/preserver"
+            app:layout_constraintStart_toEndOf="@+id/preserverHit"
+            app:layout_constraintBottom_toBottomOf="@+id/preserverHit"
+            app:layout_constraintTop_toTopOf="@+id/preserverHit"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

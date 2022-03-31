@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">盘点系统</string>
+    <string name="RepeatClick">重复点击</string>
+    <string name="success">成功</string>
+    <string name="fails">失败</string>
+    <string name="permission">权限</string>
+    <string name="permissionMessage">点击允许才可以使用我们的app哦</string>
+    <string name="Allow">允许</string>
+    <!-- 主页面参数-->
+    <string name="load">加载中…</string>
+    <string name="remind">提醒</string>
+    <string name="submit">提交</string>
+    <string name="settingInfoHit">请填写正确信息</string>
+
+    <string name="noNetwork">无网络</string>
+    <string name="help" id="1">帮助</string>
+    <string name="choose_file">读取文件失败，请检查</string>
+    <!-- RF参数-->
+    <string name="connecting">尝试连接到扫描枪</string>
+    <string name="battery">设备电量</string>
+    <string name="cancel">取消</string>
+    <string name="err_title">错误</string>
+    <string name="label_read_total">已读</string>
+    <string name="no_reader">未连接到扫码枪</string>
+    <string name="no_start">启动失败，可能在充电</string>
+    <string name="ok">确定</string>
+    <string name="retry">重试？</string>
+    <string name="clean">清空</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+
+    <string name="complete">一般</string>
+    <string name="named_file">指定</string>
+    <string name="name_export">是否导出盘点数据</string>
+    <string name="exit_inventory">是否退出盘点</string>
+    <string name="exit_supply">是否退出补登</string>
+    <string name="inventory_success">文件导出到</string>
+    <string name="unInventory">未盘:</string>
+    <string name="finishInventory">已/未盘:</string>
+    <string name="endInventory">完成盘点</string>
+    <string name="summary">统计</string>
+    <string name="total">合计:</string>
+
+
+    <string name="lock_operate">锁定操作</string>
+    <string name="lock_area">锁定区域：</string>
+    <string name="lock">锁定</string>
+    <string name="unlock">解锁</string>
+    <string name="kill_Tag">销毁标签</string>
+    <string name="sn_code">SN</string>
+    <string name="epc_code">EPC</string>
+    <string name="read_numbers">读取次数</string>
+    <string name="get_power">获取功率</string>
+    <string name="set_power">设置功率</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_qrcode">当前二维码</string>
+    <string name="start_search">开始查找</string>
+    <string name="stop_search">停止查找</string>
+    <string name="current_Tag">当前识别的标签:</string>
+    <string name="sound_switch">是否启动盘点声音</string>
+    <string name="start_scanner_code">开始扫码</string>
+    <string name="stop_scanner_code">停止扫码</string>
+    <string name="findtag_operate">寻标签操作</string>
+    <string name="set_inventory_time">设置占空比</string>
+    <string name="get_inventory_time">获取占空比</string>
+    <string name="inventory_time">盘点时间(ms)</string>
+    <string name="sleep_time">休眠时间(ms)</string>
+
+    <string name="set_frq_range">设置频点范围</string>
+    <string name="get_frq_range">获取频点范围</string>
+
+    <string name="exit_app">是否退出应用</string>
+    <string name="notice_close_inventroy">请先关闭RFID盘点操作</string>
+    <string name="poweron_success">上电成功</string>
+    <string name="charing">正在充电</string>
+    <string name="charing_full">把枪电池已充满</string>
+    <string name="notice_clean_data">请先停止RFID模块，再清空数据</string>
+    <string name="clean_success">清除成功</string>
+    <string name="failed">失败</string>
+    <string name="notice_power_failed">
+         1.请确认设置-〉用户自定义-〉EMSH设置-〉开启EMSH服务已勾选\n
+                            2.请确认PDA右上角有两个电池图标，且都显示有电；\n
+                            如果只有一个电池图标，请确认把枪和PDA连接是否可靠；\n如果左侧电池图标没电，请使用专用三合一座充充电\n
+                            3.如还有问题，请截取EMSH设置-〉EMSH状态的截图，发送给相关技术支持
+    </string>
+    <string name="poweon_failed">电源无法开启</string>
+    <string name="select_bin_file">选择bin文件</string>
+    <string-array name="serialNumber">
+        <item>21215523022235</item>
+        <item>21215523022236</item>
+        <item>21215523022237</item>
+        <item>21215523022238</item>
+    </string-array>
+    //设置
+    <string name="language">语言</string>
+    <string name="chinese">中文</string>
+    <string name="english">英语</string>
+    <string name="version">版本</string>
+    <string name="power">功率</string>
+    <string name="Area">区域:</string>
+    <string name="setting">设置</string>
+    <string name="all">所有</string>
+    <string name="find_tag">寻物</string>
+    <string name="inventory">盘点</string>
+    <string name="exit">退出</string>
+    <string name="export">导出</string>
+    <string name="back">返回</string>
+
+    <string name="activation_code">请输入激活码</string>
+    <string name="epc">资产编号</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="area_total">区域资产:</string>
+    <string name="departmentHit">部门:</string>
+    <string-array name="antennas">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string name="set">设置</string>
+    <string name="pwd">密码</string>
+    <string name="deviceid">设备号</string>
+    <string name="deviceurl">服务器地址</string>
+    <string name="update_time">刷新时间</string>
+    <string name="IpVersion">服务器版本</string>
+    <string name="deviceIdHit">请输入设备号</string>
+    <string name="deviceurlHit_two">设备号只能是3位的数字</string>
+    <string name="deviceUrlHit">请输入服务器地址</string>
+    <string name="settingErrorHit">设备号和服务器地址不能为空</string>
+    <!--提示-->
+    <string name="hint_warn">警告</string>
+    <string name="hit_out_error">错误</string>
+    <string name="netWork_connectionTimeout">与服务器链接超时</string>
+    <string name="netWork_connectionError">与服务器链接失败</string>
+    <string-array name="goods">
+        <item>正常</item>
+        <item>修改</item>
+        <item>销毁</item>
+    </string-array>
+    <string-array name="select">
+        <item>详情</item>
+        <item>寻物</item>
+    </string-array>
+</resources>
